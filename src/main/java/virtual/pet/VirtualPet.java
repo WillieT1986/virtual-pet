@@ -22,11 +22,6 @@ public class VirtualPet {
 		waste--;
 		bored--;
 		tired--;
-
-		// if(hunger <= 0 || hunger >= 20) {
-		// System.out.println("RIP");
-		// }
-
 	}
 
 	public int getHunger() {
@@ -50,9 +45,9 @@ public class VirtualPet {
 	}
 
 	public void feedPet() {
-		this.hunger += 1;
-		this.water -= 1;
-		this.waste += 1;
+		this.hunger += 2;
+		this.water -= 2;
+		this.waste += 2;
 		this.tired -= 1;
 	}
 
@@ -62,7 +57,7 @@ public class VirtualPet {
 	}
 
 	public void hasWaste() {
-		this.waste -= 2;
+		this.waste -= 3;
 		this.tired += 1;
 
 	}

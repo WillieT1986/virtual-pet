@@ -7,17 +7,18 @@ public class VirtualPetApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		VirtualPet myPet = new VirtualPet(15, 15, 15, 15, 15);
-
-		System.out.println("Hold the Dog");
-		System.out.println("Hunger:    " + myPet.getHunger());
-		System.out.println("Water:     " + myPet.getWater());
-		System.out.println("Waste:     " + myPet.getWaste());
-		System.out.println("Bored:     " + myPet.getBored());
-		System.out.println("Tiredness: " + myPet.getTired());
+		VirtualPet myPet = new VirtualPet(50, 50, 50, 50, 50);
 
 		String decision = "";
 		while (!decision.equalsIgnoreCase("Yes")) {
+
+			System.out.println("\nHold the Dog");
+			System.out.println("Hunger:    " + myPet.getHunger());
+			System.out.println("Water:     " + myPet.getWater());
+			System.out.println("Waste:     " + myPet.getWaste());
+			System.out.println("Bored:     " + myPet.getBored());
+			System.out.println("Tiredness: " + myPet.getTired());
+
 			String optionEntered = "";
 
 			System.out.println("\nWhich option would you like to choose?");

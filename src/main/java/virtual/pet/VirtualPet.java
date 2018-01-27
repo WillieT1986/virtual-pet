@@ -16,7 +16,19 @@ public class VirtualPet {
 		this.tired = tired;
 	}
 
-	// Getter
+	public void tick() {
+		hunger++;
+		water++;
+		waste--;
+		bored--;
+		tired--;
+
+		// if(hunger <= 0 || hunger >= 20) {
+		// System.out.println("RIP");
+		// }
+
+	}
+
 	public int getHunger() {
 		return hunger;
 	}

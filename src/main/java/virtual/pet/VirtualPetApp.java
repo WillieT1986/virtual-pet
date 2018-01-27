@@ -13,7 +13,7 @@ public class VirtualPetApp {
 		while (!decision.equalsIgnoreCase("Yes")) {
 
 			System.out.println("\nHold the Dog");
-			System.out.println("Hunger:    " + myPet.getHunger());
+			System.out.println("\nHunger:    " + myPet.getHunger());
 			System.out.println("Water:     " + myPet.getWater());
 			System.out.println("Waste:     " + myPet.getWaste());
 			System.out.println("Bored:     " + myPet.getBored());

@@ -37,30 +37,30 @@ public class VirtualPet {
 		return tired;
 	}
 
-	public void feedPet(int hunger) {
+	public void feedPet() {
 		this.hunger += 1;
 		this.water -= 1;
 		this.waste += 1;
 		this.tired -= 1;
 	}
 
-	public void sipWater(int water) {
+	public void sipWater() {
 		this.water += 1;
 		this.waste += 1;
 	}
 
-	public void hasWaste(int waste) {
+	public void hasWaste() {
 		this.waste -= 2;
 		this.tired += 1;
 
 	}
 
-	public void isBored(int bored) {
+	public void isBored() {
 		this.bored -= 1;
 		this.tired += 1;
 	}
 
-	public void sleepy(int tired) {
+	public void sleepy() {
 		this.tired -= 1;
 	}
 

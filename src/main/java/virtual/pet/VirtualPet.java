@@ -4,16 +4,16 @@ public class VirtualPet {
 	private int hunger;
 	private int water;
 	private int waste;
-	private int tired;
 	private int bored;
+	private int tired;
 
 	// Constructor
-	public VirtualPet(int hunger, int water, int waste, int tired, int bored) {
+	public VirtualPet(int hunger, int water, int waste, int bored, int tired) {
 		this.hunger = hunger;
 		this.water = water;
 		this.waste = waste;
-		this.tired = tired;
 		this.bored = bored;
+		this.tired = tired;
 	}
 
 	// Getter
@@ -29,12 +29,12 @@ public class VirtualPet {
 		return waste;
 	}
 
-	public int getTired() {
-		return tired;
-	}
-
 	public int getBored() {
 		return bored;
+	}
+
+	public int getTired() {
+		return tired;
 	}
 
 	public void feedPet(int hunger) {
@@ -55,13 +55,13 @@ public class VirtualPet {
 
 	}
 
-	public void sleepy(int tired) {
-		this.tired -= 1;
-	}
-
 	public void isBored(int bored) {
 		this.bored -= 1;
 		this.tired += 1;
+	}
+
+	public void sleepy(int tired) {
+		this.tired -= 1;
 	}
 
 }

@@ -82,7 +82,6 @@ public class VirtualPetApp {
 					decision.equalsIgnoreCase("No");
 					System.out.println("Thanks for not terminating your friend.");
 					System.out.println("Dinner shall come another day...");
-					// System.exit(0);
 				}
 			}
 			myPet.tick();

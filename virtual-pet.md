@@ -25,6 +25,11 @@ Which option would you like to choose?
 7. Terminate Pet...
 
 
+Details:
+When the user first runs the game the user will be prompted with...
+
+
+
 
 Classes:
 
